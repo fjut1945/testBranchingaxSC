@@ -1,0 +1,13 @@
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+GO
+---Build+
+CREATE FUNCTION tSQLt.Info()
+RETURNS TABLE
+AS
+RETURN
+SELECT
+Version = '1.0.5137.39257',
+ClrVersion = (SELECT tSQLt.Private::Info());
+---Build-
+GO
