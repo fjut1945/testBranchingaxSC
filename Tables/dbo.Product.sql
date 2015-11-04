@@ -8,7 +8,8 @@ CREATE TABLE [dbo].[Product] (
 		[Price]           [smallmoney] NULL,
 		[Active]          [bit] NULL,
 		[asd]             [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
-		[asds1]           [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+		[asds1]           [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+		[asds2]           [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
 ) ON [PRIMARY]
 GO
 ALTER TABLE [dbo].[Product]
