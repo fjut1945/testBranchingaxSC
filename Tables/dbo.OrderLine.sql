@@ -8,7 +8,8 @@ CREATE TABLE [dbo].[OrderLine] (
 		[ProductId]      [int] NOT NULL,
 		[Qty]            [numeric](18, 3) NOT NULL,
 		[LineTotal]      [numeric](18, 2) NOT NULL,
-		[TestColumn]     [nvarchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+		[TestColumn]     [nvarchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+		[test]           [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
 ) ON [PRIMARY]
 GO
 CREATE NONCLUSTERED INDEX [IX_ProductVendor_VendorID]
